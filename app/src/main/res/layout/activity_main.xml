@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_imei_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽一IMEI:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_imei_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽二IMEI:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imei_one" />
+    <TextView
+        android:id="@+id/tv_meid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEID:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imei_two" />
+    <TextView
+        android:id="@+id/tv_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mac:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_meid" />
+    <TextView
+        android:id="@+id/tv_imsi_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽一 IMSI:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mac" />
+    <TextView
+        android:id="@+id/tv_imsi_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽二 IMSI:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imsi_one" />
+    <TextView
+        android:id="@+id/tv_iccid_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽一 ICCID:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imsi_two" />
+    <TextView
+        android:id="@+id/tv_iccid_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡槽二 ICCID:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_iccid_one" />
+    <TextView
+        android:id="@+id/tv_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SN:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_iccid_two" />
+    <TextView
+        android:id="@+id/tv_android_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANDROID ID:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sn" />
+    <TextView
+        android:id="@+id/tv_simCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前SIM卡数量:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_android_id" />
+    <TextView
+        android:id="@+id/tv_simMaxCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前支持最多SIM卡数量:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_simCount" />
+    <TextView
+        android:id="@+id/tv_simNetType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前上网sim卡运营商:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_simMaxCount" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_simNetType" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
